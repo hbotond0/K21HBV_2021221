@@ -20,7 +20,7 @@ namespace K21HBV_HFT_2021221.Models
 
         [MaxLength(3)]
         [Required]
-        public int NumOfGirls { get; set; }
+        public int CostumerRating { get; set; }
 
         [NotMapped]
         public virtual ICollection<Prostitutes> Prostitutes { get; }

@@ -24,6 +24,10 @@ namespace K21HBV_HFT_2021221.Models
         [Required]
         public int Price { get; set; }
 
+
+        [Required]
+        public bool STDs { get; set; }
+
         [NotMapped]
         public virtual Pimps Pimp { get; set; }
 
