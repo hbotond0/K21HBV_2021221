@@ -24,6 +24,8 @@ namespace K21HBV_HFT_2021221.Models
         [Required]
         public int Price { get; set; }
 
+        [Required]
+        public int Age { get; set; }
 
         [Required]
         public bool STDs { get; set; }

@@ -48,14 +48,14 @@ namespace K21HBV_HFT_2021221.Data
             Customers customer7 = new Customers() { Id = 7, Name = "Name", Age = 52, PimpId = pimp2.Id };
             Customers customer8 = new Customers() { Id = 8, Name = "Name", Age = 42, PimpId = pimp1.Id };
 
-            Prostitutes prosti1 = new Prostitutes() { Id = 1, Name = "Horny Maddie", Price = 420,STDs = true, PimpId = pimp1.Id };
-            Prostitutes prosti2 = new Prostitutes() { Id = 2, Name = "Goddess Trinity", Price = 1531, STDs = false, PimpId = pimp1.Id };
-            Prostitutes prosti3 = new Prostitutes() { Id = 3, Name = "Kinky Maya", Price = 512, STDs = false, PimpId = pimp3.Id };
-            Prostitutes prosti4 = new Prostitutes() { Id = 4, Name = "Milf Evelyn", Price = 121, STDs = false, PimpId = pimp4.Id };
-            Prostitutes prosti5 = new Prostitutes() { Id = 5, Name = "Wild Riley", Price = 523, STDs = false, PimpId = pimp2.Id };
-            Prostitutes prosti6 = new Prostitutes() { Id = 6, Name = "Big booty Lexy", Price = 1234, STDs = false, PimpId = pimp2.Id };
-            Prostitutes prosti7 = new Prostitutes() { Id = 7, Name = "Bunny Jasmine", Price = 234, STDs = false, PimpId = pimp5.Id };
-            Prostitutes prosti8 = new Prostitutes() { Id = 8, Name = "Nimfomaniac Amber", Price = 69, STDs = true, PimpId = pimp5.Id };
+            Prostitutes prosti1 = new Prostitutes() { Id = 1, Name = "Horny Maddie", Age = 44, Price = 420,STDs = true, PimpId = pimp1.Id };
+            Prostitutes prosti2 = new Prostitutes() { Id = 2, Name = "Goddess Trinity", Age = 22, Price = 1531, STDs = false, PimpId = pimp1.Id };
+            Prostitutes prosti3 = new Prostitutes() { Id = 3, Name = "Kinky Maya", Age = 20, Price = 512, STDs = false, PimpId = pimp3.Id };
+            Prostitutes prosti4 = new Prostitutes() { Id = 4, Name = "Milf Evelyn", Age = 56, Price = 121, STDs = false, PimpId = pimp4.Id };
+            Prostitutes prosti5 = new Prostitutes() { Id = 5, Name = "Wild Riley", Age = 36, Price = 523, STDs = false, PimpId = pimp2.Id };
+            Prostitutes prosti6 = new Prostitutes() { Id = 6, Name = "Big booty Lexy", Age = 24, Price = 1234, STDs = false, PimpId = pimp2.Id };
+            Prostitutes prosti7 = new Prostitutes() { Id = 7, Name = "Bunny Jasmine", Age = 30, Price = 234, STDs = false, PimpId = pimp5.Id };
+            Prostitutes prosti8 = new Prostitutes() { Id = 8, Name = "Nimfomaniac Amber", Age = 50, Price = 69, STDs = true, PimpId = pimp5.Id };
 
 
 
