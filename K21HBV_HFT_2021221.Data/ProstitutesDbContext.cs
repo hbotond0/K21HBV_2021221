@@ -33,11 +33,11 @@ namespace K21HBV_HFT_2021221.Data
         {
 
             // tables
-            Pimps pimp1 = new Pimps() { Id = 1, Name = "John Doe", CostumerRating = 2 };
-            Pimps pimp2 = new Pimps() { Id = 2, Name = "Arthur Doyle", CostumerRating = 7 };
-            Pimps pimp3 = new Pimps() { Id = 3, Name = "Andrew", CostumerRating = 1 };
-            Pimps pimp4 = new Pimps() { Id = 4, Name = "Jasmine Jane", CostumerRating = 5 };
-            Pimps pimp5 = new Pimps() { Id = 5, Name = "Lukas Crosby", CostumerRating = 10 };
+            Pimps pimp1 = new Pimps() { Id = 1, Name = "John Doe", CustomerRating = 2 };
+            Pimps pimp2 = new Pimps() { Id = 2, Name = "Arthur Doyle", CustomerRating = 7 };
+            Pimps pimp3 = new Pimps() { Id = 3, Name = "Andrew", CustomerRating = 1 };
+            Pimps pimp4 = new Pimps() { Id = 4, Name = "Jasmine Jane", CustomerRating = 5 };
+            Pimps pimp5 = new Pimps() { Id = 5, Name = "Lukas Crosby", CustomerRating = 10 };
 
             Customers customer1 = new Customers() { Id = 1, Name = "Name", Age = 20, PimpId = pimp5.Id };
             Customers customer2 = new Customers() { Id = 2, Name = "Name", Age = 33, PimpId = pimp5.Id };
