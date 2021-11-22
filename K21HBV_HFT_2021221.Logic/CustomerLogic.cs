@@ -24,6 +24,7 @@ namespace K21HBV_HFT_2021221.Logic
                 Name = name,
                 Age = age,
             };
+            this.customerRepo.AddNew(cust);
             return cust;
         }
 

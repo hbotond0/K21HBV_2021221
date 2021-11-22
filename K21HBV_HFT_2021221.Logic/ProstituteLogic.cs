@@ -27,6 +27,7 @@ namespace K21HBV_HFT_2021221.Logic
                 Age = age,
                 STDs = std,
             };
+            this.prostiRepo.AddNew(prosti);
             return prosti;
         }
 
