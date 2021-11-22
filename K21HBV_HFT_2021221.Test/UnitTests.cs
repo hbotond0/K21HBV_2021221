@@ -70,7 +70,18 @@ namespace K21HBV_HFT_2021221.Test
         {
             Mock<IPimps> mockedPimpRepo = new Mock<IPimps>(MockBehavior.Loose);
 
+            List<Pimps> testPimps = new List<Pimps>()
+            {
+                new Pimps() { Id = 1, Name = "F. Enek Elek", CustomerRating=8 },
+            };
 
+            mockedPimpRepo.Setup(repo => repo.ListAll()).Returns(testPimps.AsQueryable());
+            mockedPimpRepo.Setup(repo => repo.ListOne(It.IsAny<int>())).Returns((int i) => testPimps.Where(x => x.Id == i).Single());
+            mockedPimpRepo.Setup(repo => repo.Delete(It.IsAny<int>()));
+
+            PimpLogic pimpLogic = new PimpLogic(mockedPimpRepo.Object);
+            pimpLogic.DeletePimp(1);
+            mockedPimpRepo.Verify(repo => repo.Delete(1));
         }
 
     }
