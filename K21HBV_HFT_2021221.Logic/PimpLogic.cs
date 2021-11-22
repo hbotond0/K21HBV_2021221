@@ -19,27 +19,51 @@ namespace K21HBV_HFT_2021221.Logic
 
         public Pimps AddNewPimp(string name, int rating)
         {
-            throw new NotImplementedException();
+            Pimps pimp = new Pimps()
+            {
+                Name = name,
+                CustomerRating = rating,
+            };
+            this.pimpRepo.AddNew(pimp);
+            return pimp;
         }
 
         public void ChangeName(int id, string newName)
         {
-            throw new NotImplementedException();
+            this.pimpRepo.ChangeName(id, newName);
+        }
+
+        public void DeletePimp(int id)
+        {
+            Pimps pimp = this.pimpRepo.ListOne(id);
+            if (pimp == null)
+            {
+                throw new InvalidOperationException("ERROR");
+            }
+            else
+            {
+                this.pimpRepo.Delete(id);
+            }
         }
 
         public IEnumerable<Pimps> GetAllPimps()
         {
-            throw new NotImplementedException();
+            return this.pimpRepo.ListAll().AsEnumerable();
         }
 
         public Pimps GetOnePimp(int id)
         {
-            throw new NotImplementedException();
+            Pimps pimp = this.pimpRepo.ListOne(id);
+            if (pimp == null)
+            {
+                throw new InvalidOperationException("ERROR");
+            }
+            return pimp;
         }
 
         public void UpdateCustomerRating(int id, int newRating)
         {
-            throw new NotImplementedException();
+            this.pimpRepo.UpdateCustomerRating(id, newRating);
         }
     }
 }
