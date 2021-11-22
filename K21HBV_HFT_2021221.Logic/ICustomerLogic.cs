@@ -17,6 +17,6 @@ namespace K21HBV_HFT_2021221.Logic
 
         void ChangeName(int id, string newName);
 
-
+        void DeleteCustomer(int id);
     }
 }

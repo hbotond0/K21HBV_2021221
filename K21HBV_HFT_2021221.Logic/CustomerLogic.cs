@@ -27,6 +27,11 @@ namespace K21HBV_HFT_2021221.Logic
             throw new NotImplementedException();
         }
 
+        public void DeleteCustomer(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Customers> GetAllCustomers()
         {
             throw new NotImplementedException();

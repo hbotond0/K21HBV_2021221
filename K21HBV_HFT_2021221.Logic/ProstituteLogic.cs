@@ -37,6 +37,11 @@ namespace K21HBV_HFT_2021221.Logic
             throw new NotImplementedException();
         }
 
+        public void DeleteProsti(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Prostitutes> GetAllProsti()
         {
             throw new NotImplementedException();

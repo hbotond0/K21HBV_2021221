@@ -23,5 +23,6 @@ namespace K21HBV_HFT_2021221.Logic
 
         void ChangeProstiCategory(int id, string newCategory);
 
+        void DeleteProsti(int id);
     }
 }

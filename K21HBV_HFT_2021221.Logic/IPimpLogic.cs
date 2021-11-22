@@ -19,6 +19,6 @@ namespace K21HBV_HFT_2021221.Logic
 
         void UpdateCustomerRating(int id, int newRating);
 
-
+        void DeletePimp(int id);
     }
 }
