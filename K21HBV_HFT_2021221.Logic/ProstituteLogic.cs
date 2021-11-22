@@ -19,42 +19,63 @@ namespace K21HBV_HFT_2021221.Logic
 
         public Prostitutes AddNewProsti(string name, string cat, int price, int age, bool std)
         {
-            throw new NotImplementedException();
+            Prostitutes prosti = new Prostitutes()
+            { 
+                Name = name,
+                Category = cat,
+                Price = price,
+                Age = age,
+                STDs = std,
+            };
+            return prosti;
         }
 
         public void ChangeProstiCategory(int id, string newCategory)
         {
-            throw new NotImplementedException();
+            this.prostiRepo.ChangeCategory(id, newCategory);
         }
 
         public void ChangeProstiName(int id, string newName)
         {
-            throw new NotImplementedException();
+            this.prostiRepo.ChangeName(id, newName);
         }
 
         public void ChangeProstiPrice(int id, int newPrice)
         {
-            throw new NotImplementedException();
+            this.prostiRepo.ChangePrice(id, newPrice);
         }
 
         public void DeleteProsti(int id)
         {
-            throw new NotImplementedException();
+            Prostitutes prosti = this.prostiRepo.ListOne(id);
+            if (prosti == null)
+            {
+                throw new InvalidOperationException("ERROR");
+            }
+            else
+            {
+                this.prostiRepo.Delete(id);
+            }
         }
 
         public IEnumerable<Prostitutes> GetAllProsti()
         {
-            throw new NotImplementedException();
+            return this.prostiRepo.ListAll().AsEnumerable();
         }
 
         public Prostitutes GetOneProsti(int id)
         {
-            throw new NotImplementedException();
+            Prostitutes prosti = this.prostiRepo.ListOne(id);
+            if (prosti == null)
+            {
+                throw new InvalidOperationException("ERROR");
+            }
+            return prosti;
         }
 
         public void UpdateProstHasSTD(int id, bool hasSTD)
         {
-            throw new NotImplementedException();
+            this.prostiRepo.UpdateHasSTD(id, hasSTD);
         }
     }
 }
