@@ -19,27 +19,45 @@ namespace K21HBV_HFT_2021221.Logic
 
         public Customers AddNewCustomer(string name, int age)
         {
-            throw new NotImplementedException();
+            Customers cust = new Customers()
+            {
+                Name = name,
+                Age = age,
+            };
+            return cust;
         }
 
         public void ChangeName(int id, string newName)
         {
-            throw new NotImplementedException();
+            this.customerRepo.ChangeName(id, newName);
         }
 
         public void DeleteCustomer(int id)
         {
-            throw new NotImplementedException();
+            Customers cust = this.customerRepo.ListOne(id);
+            if (cust == null)
+            {
+                throw new InvalidOperationException("ERROR");
+            }
+            else
+            {
+                this.customerRepo.Delete(id);
+            }
         }
 
         public IEnumerable<Customers> GetAllCustomers()
         {
-            throw new NotImplementedException();
+            return this.customerRepo.ListAll().AsEnumerable();
         }
 
         public Customers GetOneCustomer(int id)
         {
-            throw new NotImplementedException();
+            Customers cust = this.customerRepo.ListOne(id);
+            if (cust == null)
+            {
+                throw new InvalidOperationException("ERROR");
+            }
+            return cust;
         }
     }
 }
